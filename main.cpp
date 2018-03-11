@@ -1,20 +1,17 @@
 #include <iostream>
 #include "Sommet.hpp"
 #include "Arete.hpp"
+#include "Graphe.h"
 
 using namespace std;
 
 int main()
 {
-    /*Sommet A("Patrique"), B("Jacke");
-
-    Arete C;
-
-    C.setsommetA(A);
-    C.setsommetB(B);
-
-    cout<<C.getsommetA()->getnom();
-    cout<<C.getsommetB()->getnom();*/
-    cout<<"hello";
+    string nomfic;
+    cout<<"Saisir nom du fichier (test: societe_secrete.txt): ";
+    cin>>nomfic;
+    Graphe g;
+    g.ouvrirfichier(nomfic);
+    g.afficher();
     return 0;
 }
