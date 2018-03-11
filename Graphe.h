@@ -16,6 +16,8 @@ public:
     int getordre();
     void setordre(int ordre);
     void allouerordre(int ordre);
+    void ouvrirfichier(string nomfichier);
+    void afficher();
 
 
 
